@@ -1,6 +1,6 @@
 <?php
 include("../../bd.php");
-
+include("../../css/css_admin.php");
 if ($_POST) {
 
     //print_r($_POST);

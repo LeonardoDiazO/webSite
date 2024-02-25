@@ -1,6 +1,6 @@
 <?php
 include("../../bd.php");
-
+include("../../css/css_admin.php");
 if (isset($_GET['txtID'])) {
 
     $txtID = isset($_GET['txtID']) ? $_GET['txtID'] : ''; // Recupera el dato SELECCIONADO
@@ -120,7 +120,7 @@ include("../../templates/header.php");
 
             <div class="mb-3">
                 <label for="imagen" class="form-label">Imagen:</label>
-                <img width="50" src="../../../assets/img/portfolio/<?php echo $imagen; ?>" />
+                <img style="border-radius: 50%; vertical-align: middle; margin-right: 10px; width: 50px;" src="../../../assets/img/portfolio/<?php echo $imagen; ?>" />
                 <input type="file" class="form-control" name="imagen" id="imagen" placeholder="Imagen" aria-describedby="fileHelpId" />
 
             </div>

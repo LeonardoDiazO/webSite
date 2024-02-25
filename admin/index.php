@@ -1,7 +1,10 @@
 <!-- Inclusion del encabezaado en todas las paginas de admin  -->
 <?php include("templates/header.php");
+include("../../css/css_admin.php");
 ?>
+
 <br>
+
 <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Custom jumbotron</h1>

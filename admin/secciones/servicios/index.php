@@ -1,6 +1,6 @@
 <?php
 include("../../bd.php");
-
+include("../../css/css_admin.php");
 if (isset($_GET['txtID'])) {
 
     $txtID=isset($_GET['txtID'])?$_GET['txtID']:'';
@@ -46,9 +46,11 @@ include("../../templates/header.php");
                             <td><?php echo $registros['titulo']; ?></td>
                             <td><?php echo $registros['descripcion']; ?></td>
                             <td>
-                                <a name="" id="" class="btn btn-info" href="editar.php?txtID=<?php echo $registros['id'];?>" role="button">Editar</a>
-                                |
-                                <a name="" id="" class="btn btn-danger" href="index.php?txtID=<?php echo $registros['id'];?>" role="button">Eliminar</a>
+                                <a name="" id="" class="edit" href="editar.php?txtID=<?php echo $registros['id'];?>" role="button">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                
+                                <a name="" id="" class="delete" href="index.php?txtID=<?php echo $registros['id'];?>" role="button">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>
                     <?php } ?>

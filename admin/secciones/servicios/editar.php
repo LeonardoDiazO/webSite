@@ -1,6 +1,6 @@
 <?php
 include("../../bd.php");
-
+include("../../css/css_admin.php");
 if (isset($_GET['txtID'])) {
 
     $txtID = isset($_GET['txtID']) ? $_GET['txtID'] : ''; // Recupera el dato SELECCIONADO

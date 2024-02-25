@@ -1,5 +1,6 @@
 <?php
 include("./bd.php");
+include("../../css/css_admin.php");
 ?>
 
 <!doctype html>
