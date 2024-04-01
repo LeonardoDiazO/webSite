@@ -1,6 +1,6 @@
 <!-- Inclusion del encabezaado en todas las paginas de admin  -->
 <?php include("templates/header.php");
-include("../../css/css_admin.php");
+include("css/css_admin.php");
 ?>
 
 <br>
